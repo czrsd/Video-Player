@@ -34,4 +34,5 @@ License: [MIT](https://choosealicense.com/licenses/mit/)
 ## Discord
 
 If you have problems or want to ask me anything, dm me: czrsd or cursd#0126.
+
 Join my Discord Server: [Sigmally Modz](https://discord.gg/gHmhpCaPfP)
