@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Video Player</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <nav>
+      <div id="nav1">
+        <h1>Video Uploader</h1>
+        <img src="/src/menu.svg" width="50" alt="Menu" onclick="toggleMenu()" />
+      </div>
+      <ul>
+        <li>
+          <a href="#">Dashboard</a>
+        </li>
+        <li>
+          <a href="#" class="nav-center-anchor">Contact</a>
+        </li>
+        <li>
+          <a href="https://discord.gg/gHmhpCaPfP" target="_blank" class="nav-center-anchor">Discord</a>
+        </li>
+        <li>
+          <a href="#" class="nav-right-anchor">Account</a>
+        </li>
+        <li id="darkmode"></li>
+      </ul>
+    </nav>
+    <script>
+      function toggleMenu() {
+        var menu = document.querySelector("ul");
+        menu.classList.toggle("show");
+      }
+    </script>
+
+    <div class="container">
+      <label for="vidFile" id="chooseLabel" class="choose">Upload a Video</label>
+      <input type="file" id="vidFile" accept="video/*" />
+
+      <div id="videoContainer" style="display: none">
+        <video src="" id="vid"></video>
+        <div class="video-controls">
+          <button id="menuBtn" class="video-control-element video-control-top">
+            <img src="/src/menu.svg" alt="Menu Options" width="35" />
+          </button>
+          <button id="playBtn" class="video-control-element video-control-bottom">
+            <img src="/src/play.svg" alt="Play Video" width="35" />
+          </button>
+          <button id="skipBtn" class="video-control-element video-control-bottom">
+            <img src="/src/skip10.svg" alt="Skip 10 Seconds" width="35" />
+          </button>
+          <button id="backBtn" class="video-control-element video-control-bottom">
+            <img src="/src/back10.svg" alt="Back 10 Seconds" width="35" />
+          </button>
+          <button id="fullScreenBtn" class="video-control-element video-control-bottom">
+            <img src="/src/fullscreen.svg" alt="Full screen video" width="35" />
+          </button>
+          <button id="volumeBtn" class="video-control-element video-control-bottom">
+            <img src="/src/volume/volume_100.svg" alt="Mute Video" width="35" />
+          </button>
+          <input type="range" id="videoTime" value="0" />
+          <span id="time">00:00 / 00:00</span>
+          <div id="video-gradient"></div>
+          <div id="videoTimeSlider"></div>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
