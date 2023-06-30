@@ -30,3 +30,8 @@ Once the server is up and running, it will say "Server is running on http://loca
 If you want to use the video-player for commercial uses or parts of this Video player make sure to replace the icons because they are from other websites like [Icons8](https://icons8.com), [FlatIcon](https://www.flaticon.com) and [svgrepo](https://www.svgrepo.com).
 
 License: [MIT](https://choosealicense.com/licenses/mit/)
+
+## Discord
+
+Join my Discord Server: [Sigmally Modz](https://discord.gg/gHmhpCaPfP)
+if you have problems or want to ask me anything, dm me: czrsd or cursd#0126
